@@ -154,6 +154,10 @@ body {
     border-radius: 6px;
 }
 
+#login-password::-ms-clear, #login-password::-ms-reveal {
+    display: none;
+}
+
 .login-data .login-input {
     position: relative;
     z-index: 1;
