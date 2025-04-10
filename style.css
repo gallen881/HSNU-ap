@@ -120,6 +120,28 @@ body {
     display: block;
 }
 
+#password-icon-div {
+    position: absolute;
+    right: 12px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+#password-icon {
+    width: 26px;
+    transition: all 0.3s ease;
+    fill: #d6d4d4;
+}
+
+.eye-animation {
+    animation: eye 0.4s ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
 #domain {
     border-radius: 0px 6px 6px 0px;
 }
@@ -407,6 +429,16 @@ h2 {
     }
 }
 
+@keyframes eye {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
 @media (max-width: 910px) {
     #info-content {
         flex-direction: column;
@@ -438,6 +470,9 @@ h2 {
         font-size: 1.1rem;
         padding: 13px 25px;
         margin: 0 5px 10px 20px;
+    }
+    #password-icon {
+        width: 22px;
     }
 }
 
