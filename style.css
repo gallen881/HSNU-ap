@@ -70,6 +70,7 @@ body {
 #login-box {
     margin-top: 38vh;
     max-width: 500px;
+    width: 100%;
     transition: all 0.2s ease-out;
 }
 
@@ -112,9 +113,9 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
-.login-data > span,
+
 .login-data .login-input {
     white-space: nowrap;
     display: block;
@@ -142,12 +143,8 @@ body {
     animation-direction: alternate;
 }
 
-#domain {
-    border-radius: 0px 6px 6px 0px;
-}
-
 #login-user {
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 6px;
 }
 
 #login-password {
@@ -166,20 +163,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-.login-data > span {
-    text-align: center;
-    padding: 12px 12px;
-    line-height: 30px;
-    color: #d6d4d4;
-    background: #1e1e20;
-    border: 2px solid #0d0d0d;
-    font-size: 1.4rem;
-    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease, padding 0.5s ease, font-size 0.5s ease;
-}
-.login-data:focus-within > span {
-    background: #47474f;
-    border-color: #47474f;
-}
+
 
 .login-button {
     appearance: button;
@@ -195,7 +179,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 20px;
-    margin: 0 5px 10px 48px;
+    margin: 8px 5px 10px 48px;
     overflow: visible;
     padding: 18px 40px;
     text-align: center;
@@ -240,7 +224,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 10px 30px;
+    margin: 8px 0px 10px 30px;
     animation: jump-in 0.8s linear;
 }
 
@@ -461,44 +445,49 @@ h2 {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .login-input {
         font-size: 1.1rem;
         padding: 8px 12px;
     }
-    .login-data > span {
-        font-size: 1.1rem;
-        padding: 5px 5px;
+    .login-data {
+        margin-bottom: 6px;
     }
     .login-button {
         font-size: 1.1rem;
         padding: 13px 25px;
-        margin: 0 5px 10px 20px;
+        margin: 8px 5px 10px 20px;
     }
     #password-icon {
         width: 22px;
     }
 }
 
-@media (max-height: 550px) {
+@media (max-height: 712px) {
+    #title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-height: 580px) {
     #title {
         font-size: 2.5rem;
     }
+}
 
+@media (max-height: 550px) {
     #login-box {
         margin-top: 25vh;
     }
-
 }
 
-@media (max-height: 400px) {
+@media (max-height: 530px) {
     #title {
         font-size: 0px;
     }
-
     #title::after {
         font-size: 2.5rem;
-        content: "HSNU-ap\A          登入頁面";
+        content: "TANetRoaming\A登入頁面";
         white-space: pre;
         max-width: 5rem;
     }
